@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PARTagPicker-PARTagPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PARTagPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-trytags.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>15A3D7090D37CE73C14CD68F6AEE4D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8708C821FC078FDE01F7F6914AAFBD02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE162A81A7EFBDC1B3EC4934207FA56C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

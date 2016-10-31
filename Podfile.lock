@@ -1,0 +1,20 @@
+PODS:
+  - PARTagPicker (1.1.0)
+
+DEPENDENCIES:
+  - PARTagPicker (from `git@github.com:paulrolfe/PARTagPicker.git`, tag `1.1.0`)
+
+EXTERNAL SOURCES:
+  PARTagPicker:
+    :git: git@github.com:paulrolfe/PARTagPicker.git
+    :tag: 1.1.0
+
+CHECKOUT OPTIONS:
+  PARTagPicker:
+    :git: git@github.com:paulrolfe/PARTagPicker.git
+    :tag: 1.1.0
+
+SPEC CHECKSUMS:
+  PARTagPicker: f7f3e8fac3676cf62b6bb1ed147041216d4bcb3a
+
+COCOAPODS: 0.39.0

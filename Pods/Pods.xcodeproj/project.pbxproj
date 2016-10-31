@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0377DAB25B274E0541EAF5D742132C06 /* PARBackspaceTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = AD345A8FD4BD5B95D1BB52D479ABB490 /* PARBackspaceTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EAA83370C394BCDE597611C9CE1053 /* PARTagPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6683FB5E77C5130454197892D08CE1 /* PARTagPickerViewController.xib */; };
+		1528053BD8CFDDA2CB0C7397D5050F5A /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 943B55881F8734F6D24763A90E778142 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179617D37B9EF44184BFC2AC53F345AF /* PARBackspaceTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 626F9AAE7FD7F26831E6FDD48E8452EB /* PARBackspaceTextField.m */; };
+		1B6C51D1AC184F16A21C1609E09178E1 /* PARTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5EA3638431E4FC8D6555C31DEB157 /* PARTagCollectionViewCell.m */; };
+		2777F2DE0A81B01E5E0962365B7ACCC1 /* PARTagColorReference.h in Headers */ = {isa = PBXBuildFile; fileRef = E41F6C7ECBF462FE260D15AD1D1ACE7A /* PARTagColorReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6DCCC1BC15C7D689DCF81501F8EDC7 /* UIView+NibInitable.h in Headers */ = {isa = PBXBuildFile; fileRef = 863BDE2D31118076A7A0E5B793BB452F /* UIView+NibInitable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BD3E82A09DA4D6C261645CD1D1C3C8 /* PARTextFieldCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E2FE4FCA272DE1CDD200BE2849635E /* PARTextFieldCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47DB189DCFA0DA59D6750F2033AB25A1 /* PARTagPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609ADC239FC0BAE1AF5CB0ECA1C1B065 /* PARTagPicker-dummy.m */; };
+		4875C24D6F547790748F93C26BCC1E63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		49163FF7F6D2A06BB22784F6C4D210DF /* PARTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CE03C23365E8007C7A12A6D1D6ED86 /* PARTagCollectionViewCell.xib */; };
+		530F90B2C02CDF358ADEC7BD2200054A /* UIView+NibInitable.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E1450F584F4B04C9599648A6DB0A17 /* UIView+NibInitable.m */; };
+		66FD9B748F4B40AE4CCDCE90D9095FE1 /* PARTagColorReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 163943069C31B3ECD9FEC844C5A1E177 /* PARTagColorReference.m */; };
+		7338DCBE5432D7A1C372C9EBD1366FBD /* NSString+PARStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ECBD9F5881B09D4E912FC7B912DF16 /* NSString+PARStrings.m */; };
+		7822F4056ED4047156AFB2BACED04BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		7FB3DDE474B0A46405019138AD304728 /* PARTagPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A910A6DB52906D9C5F6839EEE0AF10D /* PARTagPicker.bundle */; };
+		80AFF653A7358DA86E773709E8ABE21F /* PARTagPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25AD7054FF241B591B5AB662AA86100 /* PARTagPickerViewController.m */; };
+		83626800B34A97786EEDB6D3D3D4D87D /* Pods-trytags-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0D03DDE0F3BC14822B415AC7009BF /* Pods-trytags-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F990771991437F995A97979D371B025 /* Pods-trytags-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E5A8E3BB72B63CD3315853C1782C6E /* Pods-trytags-dummy.m */; };
+		95AEAA1C5A93DC42EEEC2B41D1954D75 /* PARTagPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4536CB861A04AEA9040EB37084C921 /* PARTagPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC151CEBB75D6E1893E8C52A2CE9678 /* NSString+PARStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = B0701AFC998FD84CF924516696F196B5 /* NSString+PARStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5CA47AF6FD4CE7A2711090A5DAA9180 /* PARTextFieldCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1580EEC941EAA1B0985A7DFECE0AFBB /* PARTextFieldCollectionViewCell.m */; };
+		BB194CC880C1F098017EA9A110971D5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		CA1956C5318675C9C0508DEC9823E276 /* PARTagPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB1F3ABFC9A1C5DB3FEFCC671B09E6A /* PARTagPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCE31CD01E89C111951A3FC4338CD28B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		D9AA963BB8E1126D962B8E8F19E65507 /* PARTagCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 937D6AFC60ABD3589DB7BC525D0033B4 /* PARTagCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB4EF3F0C299AF5A1F28E66E311B7B55 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2624DCDD0A922CC6BA4BECB59E1425 /* Pods-dummy.m */; };
+		E002DC3D75AB7DF2D32A024074D5E065 /* PARTextFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2875A71B87C0133180AE5C128668151A /* PARTextFieldCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93F31FC5E21D7C0BDAF0CBE380AEB0A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A3D7090D37CE73C14CD68F6AEE4D9C;
+			remoteInfo = "PARTagPicker-PARTagPicker";
+		};
+		9AB3007F0A85074424E1C312F10DD2E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E;
+			remoteInfo = PARTagPicker;
+		};
+		D1D1407C96A54E68FEEC90864925F91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E;
+			remoteInfo = PARTagPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		163943069C31B3ECD9FEC844C5A1E177 /* PARTagColorReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARTagColorReference.m; path = PARTagPicker/Classes/PARTagColorReference.m; sourceTree = "<group>"; };
+		1BB90672BD6EB0CC8DB12F5571838B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2875A71B87C0133180AE5C128668151A /* PARTextFieldCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PARTextFieldCollectionViewCell.xib; path = PARTagPicker/Resources/PARTextFieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		2912B3C280623262DA34AC269A14CD10 /* Pods-trytags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trytags.release.xcconfig"; sourceTree = "<group>"; };
+		29E1450F584F4B04C9599648A6DB0A17 /* UIView+NibInitable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+NibInitable.m"; path = "PARTagPicker/Classes/UIView+NibInitable.m"; sourceTree = "<group>"; };
+		2E6683FB5E77C5130454197892D08CE1 /* PARTagPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PARTagPickerViewController.xib; path = PARTagPicker/Resources/PARTagPickerViewController.xib; sourceTree = "<group>"; };
+		38D2CA073CF72E4EE79E84BD3E5241FE /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		53E2FE4FCA272DE1CDD200BE2849635E /* PARTextFieldCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARTextFieldCollectionViewCell.h; path = PARTagPicker/Classes/PARTextFieldCollectionViewCell.h; sourceTree = "<group>"; };
+		609ADC239FC0BAE1AF5CB0ECA1C1B065 /* PARTagPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PARTagPicker-dummy.m"; sourceTree = "<group>"; };
+		626F9AAE7FD7F26831E6FDD48E8452EB /* PARBackspaceTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARBackspaceTextField.m; path = PARTagPicker/Classes/PARBackspaceTextField.m; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75DD1190B4BBE264D12D5B455CAC3134 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4554851880576BAD2BA2DE8FF6E792 /* Pods-trytags-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trytags-frameworks.sh"; sourceTree = "<group>"; };
+		7DC62DCFAA1E7717F02552CB663C0C90 /* PARTagPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PARTagPicker-prefix.pch"; sourceTree = "<group>"; };
+		84CE03C23365E8007C7A12A6D1D6ED86 /* PARTagCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PARTagCollectionViewCell.xib; path = PARTagPicker/Resources/PARTagCollectionViewCell.xib; sourceTree = "<group>"; };
+		858EAF55DC24E7381E93876CE4F1DE9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863BDE2D31118076A7A0E5B793BB452F /* UIView+NibInitable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+NibInitable.h"; path = "PARTagPicker/Classes/UIView+NibInitable.h"; sourceTree = "<group>"; };
+		8C437F7B6E881ABB5B2C1438CCE62AA9 /* Pods-trytags-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trytags-resources.sh"; sourceTree = "<group>"; };
+		8F4536CB861A04AEA9040EB37084C921 /* PARTagPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PARTagPicker-umbrella.h"; sourceTree = "<group>"; };
+		937D6AFC60ABD3589DB7BC525D0033B4 /* PARTagCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARTagCollectionViewCell.h; path = PARTagPicker/Classes/PARTagCollectionViewCell.h; sourceTree = "<group>"; };
+		93ECBD9F5881B09D4E912FC7B912DF16 /* NSString+PARStrings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PARStrings.m"; path = "PARTagPicker/Classes/NSString+PARStrings.m"; sourceTree = "<group>"; };
+		943B55881F8734F6D24763A90E778142 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		96007C909F82DB8C58E9D502A3D6A6BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9A910A6DB52906D9C5F6839EEE0AF10D /* PARTagPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PARTagPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA195B93C5900D04004331B60536C11 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		A1A0D03DDE0F3BC14822B415AC7009BF /* Pods-trytags-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trytags-umbrella.h"; sourceTree = "<group>"; };
+		A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PARTagPicker.xcconfig; sourceTree = "<group>"; };
+		ABB1F3ABFC9A1C5DB3FEFCC671B09E6A /* PARTagPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARTagPickerViewController.h; path = PARTagPicker/Classes/PARTagPickerViewController.h; sourceTree = "<group>"; };
+		AD345A8FD4BD5B95D1BB52D479ABB490 /* PARBackspaceTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARBackspaceTextField.h; path = PARTagPicker/Classes/PARBackspaceTextField.h; sourceTree = "<group>"; };
+		B0701AFC998FD84CF924516696F196B5 /* NSString+PARStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PARStrings.h"; path = "PARTagPicker/Classes/NSString+PARStrings.h"; sourceTree = "<group>"; };
+		B09F8CE0FD46891BAA0DCEACF7047B6D /* PARTagPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PARTagPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A37FB0637475B126448B8389D3EA67 /* Pods-trytags-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trytags-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8DD8B5BA0FA6DE618D56616438383BF /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		B8E5A8E3BB72B63CD3315853C1782C6E /* Pods-trytags-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trytags-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC2624DCDD0A922CC6BA4BECB59E1425 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C25AD7054FF241B591B5AB662AA86100 /* PARTagPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARTagPickerViewController.m; path = PARTagPicker/Classes/PARTagPickerViewController.m; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C86EEC8BB1DA89FF9E7CB95FF856E675 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE5EA3638431E4FC8D6555C31DEB157 /* PARTagCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARTagCollectionViewCell.m; path = PARTagPicker/Classes/PARTagCollectionViewCell.m; sourceTree = "<group>"; };
+		CF6A6B61E7076683941570DF5ABE1975 /* Pods_trytags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trytags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7527FDA6E89C1572723F4C49EA798D /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E41F6C7ECBF462FE260D15AD1D1ACE7A /* PARTagColorReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARTagColorReference.h; path = PARTagPicker/Classes/PARTagColorReference.h; sourceTree = "<group>"; };
+		EEE9386374E44A33A45A4A51F589E0F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		EF0231B780CB8DDBA8AE41583C07D591 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		F1580EEC941EAA1B0985A7DFECE0AFBB /* PARTextFieldCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARTextFieldCollectionViewCell.m; path = PARTagPicker/Classes/PARTextFieldCollectionViewCell.m; sourceTree = "<group>"; };
+		F4B57928CAF7F48DC4DB45E3EDD4456C /* Pods-trytags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trytags.debug.xcconfig"; sourceTree = "<group>"; };
+		F62CCED43859A0F4207D6F7DDC76674D /* Pods-trytags-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trytags-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7DC16810EBD0C366A3E6EC381556258 /* Pods-trytags.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-trytags.modulemap"; sourceTree = "<group>"; };
+		F84AAE4C686D8A2650239C51E7094825 /* PARTagPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PARTagPicker.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B21B1FADCA24C41796CA4AD016971BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AE0F60796DEEC3E67A5AEEA695586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE31CD01E89C111951A3FC4338CD28B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A475311CA4B1F935028B93140E6C026A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4875C24D6F547790748F93C26BCC1E63 /* Foundation.framework in Frameworks */,
+				BB194CC880C1F098017EA9A110971D5B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F7081ED272D87B59BB3AAD61C57DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7822F4056ED4047156AFB2BACED04BA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBA14811D930BD240ED7C9ABDDA396F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BB90672BD6EB0CC8DB12F5571838B60 /* Info.plist */,
+				F84AAE4C686D8A2650239C51E7094825 /* PARTagPicker.modulemap */,
+				A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */,
+				609ADC239FC0BAE1AF5CB0ECA1C1B065 /* PARTagPicker-dummy.m */,
+				7DC62DCFAA1E7717F02552CB663C0C90 /* PARTagPicker-prefix.pch */,
+				8F4536CB861A04AEA9040EB37084C921 /* PARTagPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PARTagPicker";
+			sourceTree = "<group>";
+		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1C2B63C16D2589B8E9F0EB11D507D738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C86EEC8BB1DA89FF9E7CB95FF856E675 /* Info.plist */,
+				B8DD8B5BA0FA6DE618D56616438383BF /* Pods.modulemap */,
+				38D2CA073CF72E4EE79E84BD3E5241FE /* Pods-acknowledgements.markdown */,
+				DD7527FDA6E89C1572723F4C49EA798D /* Pods-acknowledgements.plist */,
+				BC2624DCDD0A922CC6BA4BECB59E1425 /* Pods-dummy.m */,
+				9DA195B93C5900D04004331B60536C11 /* Pods-frameworks.sh */,
+				EF0231B780CB8DDBA8AE41583C07D591 /* Pods-resources.sh */,
+				943B55881F8734F6D24763A90E778142 /* Pods-umbrella.h */,
+				96007C909F82DB8C58E9D502A3D6A6BC /* Pods.debug.xcconfig */,
+				EEE9386374E44A33A45A4A51F589E0F1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		39062715BB6AA804E585C43A29A544A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44BDFE6611CA3930CAEA4532BEB97B35 /* PARTagPicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44BDFE6611CA3930CAEA4532BEB97B35 /* PARTagPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B0701AFC998FD84CF924516696F196B5 /* NSString+PARStrings.h */,
+				93ECBD9F5881B09D4E912FC7B912DF16 /* NSString+PARStrings.m */,
+				AD345A8FD4BD5B95D1BB52D479ABB490 /* PARBackspaceTextField.h */,
+				626F9AAE7FD7F26831E6FDD48E8452EB /* PARBackspaceTextField.m */,
+				937D6AFC60ABD3589DB7BC525D0033B4 /* PARTagCollectionViewCell.h */,
+				CCE5EA3638431E4FC8D6555C31DEB157 /* PARTagCollectionViewCell.m */,
+				E41F6C7ECBF462FE260D15AD1D1ACE7A /* PARTagColorReference.h */,
+				163943069C31B3ECD9FEC844C5A1E177 /* PARTagColorReference.m */,
+				ABB1F3ABFC9A1C5DB3FEFCC671B09E6A /* PARTagPickerViewController.h */,
+				C25AD7054FF241B591B5AB662AA86100 /* PARTagPickerViewController.m */,
+				53E2FE4FCA272DE1CDD200BE2849635E /* PARTextFieldCollectionViewCell.h */,
+				F1580EEC941EAA1B0985A7DFECE0AFBB /* PARTextFieldCollectionViewCell.m */,
+				863BDE2D31118076A7A0E5B793BB452F /* UIView+NibInitable.h */,
+				29E1450F584F4B04C9599648A6DB0A17 /* UIView+NibInitable.m */,
+				C42EBE61DA35770E18C34237F324B842 /* Resources */,
+				0BBA14811D930BD240ED7C9ABDDA396F /* Support Files */,
+			);
+			path = PARTagPicker;
+			sourceTree = "<group>";
+		};
+		5C33F91F7B940BA3304BA809B45CEAD6 /* Pods-trytags */ = {
+			isa = PBXGroup;
+			children = (
+				858EAF55DC24E7381E93876CE4F1DE9E /* Info.plist */,
+				F7DC16810EBD0C366A3E6EC381556258 /* Pods-trytags.modulemap */,
+				B3A37FB0637475B126448B8389D3EA67 /* Pods-trytags-acknowledgements.markdown */,
+				F62CCED43859A0F4207D6F7DDC76674D /* Pods-trytags-acknowledgements.plist */,
+				B8E5A8E3BB72B63CD3315853C1782C6E /* Pods-trytags-dummy.m */,
+				7D4554851880576BAD2BA2DE8FF6E792 /* Pods-trytags-frameworks.sh */,
+				8C437F7B6E881ABB5B2C1438CCE62AA9 /* Pods-trytags-resources.sh */,
+				A1A0D03DDE0F3BC14822B415AC7009BF /* Pods-trytags-umbrella.h */,
+				F4B57928CAF7F48DC4DB45E3EDD4456C /* Pods-trytags.debug.xcconfig */,
+				2912B3C280623262DA34AC269A14CD10 /* Pods-trytags.release.xcconfig */,
+			);
+			name = "Pods-trytags";
+			path = "Target Support Files/Pods-trytags";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				39062715BB6AA804E585C43A29A544A9 /* Pods */,
+				B8815FA05F6BFB29F83010C83FFAB898 /* Products */,
+				8A12EF92B3CD529CC0DC0086AA8B9533 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A12EF92B3CD529CC0DC0086AA8B9533 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C2B63C16D2589B8E9F0EB11D507D738 /* Pods */,
+				5C33F91F7B940BA3304BA809B45CEAD6 /* Pods-trytags */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B8815FA05F6BFB29F83010C83FFAB898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A910A6DB52906D9C5F6839EEE0AF10D /* PARTagPicker.bundle */,
+				B09F8CE0FD46891BAA0DCEACF7047B6D /* PARTagPicker.framework */,
+				75DD1190B4BBE264D12D5B455CAC3134 /* Pods.framework */,
+				CF6A6B61E7076683941570DF5ABE1975 /* Pods_trytags.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42EBE61DA35770E18C34237F324B842 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84CE03C23365E8007C7A12A6D1D6ED86 /* PARTagCollectionViewCell.xib */,
+				2E6683FB5E77C5130454197892D08CE1 /* PARTagPickerViewController.xib */,
+				2875A71B87C0133180AE5C128668151A /* PARTextFieldCollectionViewCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		282F22AFFA68E534A94D78A6AE8DA70A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC151CEBB75D6E1893E8C52A2CE9678 /* NSString+PARStrings.h in Headers */,
+				0377DAB25B274E0541EAF5D742132C06 /* PARBackspaceTextField.h in Headers */,
+				D9AA963BB8E1126D962B8E8F19E65507 /* PARTagCollectionViewCell.h in Headers */,
+				2777F2DE0A81B01E5E0962365B7ACCC1 /* PARTagColorReference.h in Headers */,
+				95AEAA1C5A93DC42EEEC2B41D1954D75 /* PARTagPicker-umbrella.h in Headers */,
+				CA1956C5318675C9C0508DEC9823E276 /* PARTagPickerViewController.h in Headers */,
+				46BD3E82A09DA4D6C261645CD1D1C3C8 /* PARTextFieldCollectionViewCell.h in Headers */,
+				2C6DCCC1BC15C7D689DCF81501F8EDC7 /* UIView+NibInitable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470C4EA6430C7A988DFF4E20CAC87A29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83626800B34A97786EEDB6D3D3D4D87D /* Pods-trytags-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41A8726C33AA0DB2D4C9686FAE8DB48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1528053BD8CFDDA2CB0C7397D5050F5A /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15A3D7090D37CE73C14CD68F6AEE4D9C /* PARTagPicker-PARTagPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2E048A37C5911F8DACF726F1934EFC /* Build configuration list for PBXNativeTarget "PARTagPicker-PARTagPicker" */;
+			buildPhases = (
+				A7DB0A30D814064E374A0DCC0E2B8B1A /* Sources */,
+				9B21B1FADCA24C41796CA4AD016971BB /* Frameworks */,
+				25305A1B17320E74AD7B65FACFE79780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PARTagPicker-PARTagPicker";
+			productName = "PARTagPicker-PARTagPicker";
+			productReference = 9A910A6DB52906D9C5F6839EEE0AF10D /* PARTagPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E /* PARTagPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C9F9CB794097719DF1138E4AC00E6EB /* Build configuration list for PBXNativeTarget "PARTagPicker" */;
+			buildPhases = (
+				19E8C2F932BCBA1384875A56D360F083 /* Sources */,
+				A475311CA4B1F935028B93140E6C026A /* Frameworks */,
+				4ED209B54D7B86D9A17FE2E2C42B8678 /* Resources */,
+				282F22AFFA68E534A94D78A6AE8DA70A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1386508C83D93090C495249F2C50510F /* PBXTargetDependency */,
+			);
+			name = PARTagPicker;
+			productName = PARTagPicker;
+			productReference = B09F8CE0FD46891BAA0DCEACF7047B6D /* PARTagPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8708C821FC078FDE01F7F6914AAFBD02 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A437C0190A2B803E761910A1758CFE /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				676C6782D1343B8FA07B0643ADCD4AAF /* Sources */,
+				E9F7081ED272D87B59BB3AAD61C57DF2 /* Frameworks */,
+				D41A8726C33AA0DB2D4C9686FAE8DB48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF1BC4A54748DC0A3E108239CB9ECF8 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 75DD1190B4BBE264D12D5B455CAC3134 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE162A81A7EFBDC1B3EC4934207FA56C /* Pods-trytags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95822E40EDC4829BA90DF97EDD35EA33 /* Build configuration list for PBXNativeTarget "Pods-trytags" */;
+			buildPhases = (
+				E0BB11F9236398F8DE89154AD6C74425 /* Sources */,
+				A02AE0F60796DEEC3E67A5AEEA695586 /* Frameworks */,
+				470C4EA6430C7A988DFF4E20CAC87A29 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1828F055C9E9FF9DBC0EF49E6327A432 /* PBXTargetDependency */,
+			);
+			name = "Pods-trytags";
+			productName = "Pods-trytags";
+			productReference = CF6A6B61E7076683941570DF5ABE1975 /* Pods_trytags.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B8815FA05F6BFB29F83010C83FFAB898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E /* PARTagPicker */,
+				15A3D7090D37CE73C14CD68F6AEE4D9C /* PARTagPicker-PARTagPicker */,
+				8708C821FC078FDE01F7F6914AAFBD02 /* Pods */,
+				EE162A81A7EFBDC1B3EC4934207FA56C /* Pods-trytags */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25305A1B17320E74AD7B65FACFE79780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49163FF7F6D2A06BB22784F6C4D210DF /* PARTagCollectionViewCell.xib in Resources */,
+				10EAA83370C394BCDE597611C9CE1053 /* PARTagPickerViewController.xib in Resources */,
+				E002DC3D75AB7DF2D32A024074D5E065 /* PARTextFieldCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED209B54D7B86D9A17FE2E2C42B8678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB3DDE474B0A46405019138AD304728 /* PARTagPicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19E8C2F932BCBA1384875A56D360F083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7338DCBE5432D7A1C372C9EBD1366FBD /* NSString+PARStrings.m in Sources */,
+				179617D37B9EF44184BFC2AC53F345AF /* PARBackspaceTextField.m in Sources */,
+				1B6C51D1AC184F16A21C1609E09178E1 /* PARTagCollectionViewCell.m in Sources */,
+				66FD9B748F4B40AE4CCDCE90D9095FE1 /* PARTagColorReference.m in Sources */,
+				47DB189DCFA0DA59D6750F2033AB25A1 /* PARTagPicker-dummy.m in Sources */,
+				80AFF653A7358DA86E773709E8ABE21F /* PARTagPickerViewController.m in Sources */,
+				A5CA47AF6FD4CE7A2711090A5DAA9180 /* PARTextFieldCollectionViewCell.m in Sources */,
+				530F90B2C02CDF358ADEC7BD2200054A /* UIView+NibInitable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676C6782D1343B8FA07B0643ADCD4AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4EF3F0C299AF5A1F28E66E311B7B55 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DB0A30D814064E374A0DCC0E2B8B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BB11F9236398F8DE89154AD6C74425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F990771991437F995A97979D371B025 /* Pods-trytags-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1386508C83D93090C495249F2C50510F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PARTagPicker-PARTagPicker";
+			target = 15A3D7090D37CE73C14CD68F6AEE4D9C /* PARTagPicker-PARTagPicker */;
+			targetProxy = 93F31FC5E21D7C0BDAF0CBE380AEB0A2 /* PBXContainerItemProxy */;
+		};
+		1828F055C9E9FF9DBC0EF49E6327A432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PARTagPicker;
+			target = 1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E /* PARTagPicker */;
+			targetProxy = D1D1407C96A54E68FEEC90864925F91A /* PBXContainerItemProxy */;
+		};
+		5DF1BC4A54748DC0A3E108239CB9ECF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PARTagPicker;
+			target = 1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E /* PARTagPicker */;
+			targetProxy = 9AB3007F0A85074424E1C312F10DD2E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		083128A67B812C81E648C08C11D9C1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PARTagPicker/PARTagPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PARTagPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PARTagPicker/PARTagPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PARTagPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52F51BEA109BA80BB4149F0D9738D0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PARTagPicker/PARTagPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PARTagPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PARTagPicker/PARTagPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PARTagPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		606CDF3DCDAB789233AAD4E40B6430E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2912B3C280623262DA34AC269A14CD10 /* Pods-trytags.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-trytags/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trytags/Pods-trytags.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_trytags;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B85CFA43E6E8D7F2F26D22A04189569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE9386374E44A33A45A4A51F589E0F1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B93D7E24C7DB61938771A58D65A5C522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PARTagPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D252FA77EAF2E7BD0488CE9873024296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66689AEE287659DF5BB62078959A5B4 /* PARTagPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PARTagPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DA536068E46786C33ECD59BD53E14C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96007C909F82DB8C58E9D502A3D6A6BC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6A1DDF9E3C8DC41BA2EEA2DA4BA28BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B57928CAF7F48DC4DB45E3EDD4456C /* Pods-trytags.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-trytags/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trytags/Pods-trytags.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_trytags;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A437C0190A2B803E761910A1758CFE /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA536068E46786C33ECD59BD53E14C72 /* Debug */,
+				7B85CFA43E6E8D7F2F26D22A04189569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2E048A37C5911F8DACF726F1934EFC /* Build configuration list for PBXNativeTarget "PARTagPicker-PARTagPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D252FA77EAF2E7BD0488CE9873024296 /* Debug */,
+				B93D7E24C7DB61938771A58D65A5C522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C9F9CB794097719DF1138E4AC00E6EB /* Build configuration list for PBXNativeTarget "PARTagPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F51BEA109BA80BB4149F0D9738D0F6 /* Debug */,
+				083128A67B812C81E648C08C11D9C1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95822E40EDC4829BA90DF97EDD35EA33 /* Build configuration list for PBXNativeTarget "Pods-trytags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A1DDF9E3C8DC41BA2EEA2DA4BA28BA /* Debug */,
+				606CDF3DCDAB789233AAD4E40B6430E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
