@@ -1,20 +1,22 @@
 PODS:
-  - PARTagPicker (1.1.0)
+  - PARTagPicker (1.2.3)
 
 DEPENDENCIES:
-  - PARTagPicker (from `git@github.com:paulrolfe/PARTagPicker.git`, tag `1.1.0`)
+  - PARTagPicker (from `git@github.com:paulrolfe/PARTagPicker.git`, tag `1.2.3`)
 
 EXTERNAL SOURCES:
   PARTagPicker:
     :git: git@github.com:paulrolfe/PARTagPicker.git
-    :tag: 1.1.0
+    :tag: 1.2.3
 
 CHECKOUT OPTIONS:
   PARTagPicker:
     :git: git@github.com:paulrolfe/PARTagPicker.git
-    :tag: 1.1.0
+    :tag: 1.2.3
 
 SPEC CHECKSUMS:
-  PARTagPicker: f7f3e8fac3676cf62b6bb1ed147041216d4bcb3a
+  PARTagPicker: 3107679f0e67534ae65678b19a1f261771ccef00
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 0e05e9f15aec6ee832286407ca670eac486203e8
+
+COCOAPODS: 1.0.1

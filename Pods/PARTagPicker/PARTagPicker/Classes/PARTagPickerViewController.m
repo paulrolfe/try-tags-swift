@@ -42,6 +42,8 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
     self = [super initWithNibName:nibNameOrNil bundle:assetBundle];
     if (self) {
         self.tapToEraseTags = YES;
+        self.textfieldEnabled = YES;
+        self.shouldAutomaticallyChangeVisibilityState = YES;
         self.placeholderText = @"Add a tag";
         self.tagColorRef = [[PARTagColorReference alloc] initWithDefaultColors];
         self.textfieldPlaceholderTextColor = [UIColor grayColor];
@@ -64,7 +66,9 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
 #pragma mark - Forced Updates
 
 - (void)becomeFirstResponder {
-    [self.cellTextField becomeFirstResponder];
+    if (self.textfieldEnabled) {
+        [self.cellTextField becomeFirstResponder];
+    }
 }
 
 - (void)reloadCollectionViews {
@@ -80,13 +84,14 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
     [self transferChosenTagsWithNewAllTags];
     [self.availableTags removeObjectsInArray:self.chosenTags];
     [self filterTagsFromSearchString];
-    [self.availableTagCollectionView reloadData];
 }
 
 - (void)setChosenTags:(NSMutableArray *)chosenTags {
     _chosenTags = chosenTags;
     [self.chosenTagCollectionView reloadData];
-    [self.availableTags removeObjectsInArray:self.chosenTags];
+    self.availableTags = [self.allTags mutableCopy];
+    [self.availableTags removeObjectsInArray: chosenTags];
+    [self filterTagsFromSearchString];
 }
 
 - (void)transferChosenTagsWithNewAllTags {
@@ -130,6 +135,12 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
         [self.delegate tagPicker:self visibilityChangedToState:visibilityState];
         
     }
+}
+
+- (void)setTextfieldEnabled:(BOOL)textfieldEnabled {
+    _textfieldEnabled = textfieldEnabled;
+    self.cellTextField.userInteractionEnabled = textfieldEnabled;
+    [self reloadCollectionViews]; // In order to fix the phontom text fields.
 }
 
 #pragma mark - Tag Filtering
@@ -188,6 +199,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
         self.chosenTagCollectionViewHeightConstraint.constant = COLLECTION_VIEW_HEIGHT;
     }
     [UIView animateWithDuration:.5 animations:^{
+        [self.chosenTagCollectionView.collectionViewLayout invalidateLayout];
         [self.view layoutIfNeeded];
     }];
 }
@@ -202,6 +214,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
         self.availableTagCollectionViewHeightConstraint.constant = COLLECTION_VIEW_HEIGHT;
     }
     [UIView animateWithDuration:.5 animations:^{
+        [self.availableTagCollectionView.collectionViewLayout invalidateLayout];
         [self.view layoutIfNeeded];
     }];
 }
@@ -219,18 +232,20 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
 }
 
 - (void)removeChosenTagFromIndexPath:(NSIndexPath *)indexPath {
-    NSString *selectedTag = [self.chosenTags objectAtIndex:indexPath.row];
-    if ([self.allTags containsObject:selectedTag]) {
-        [self.availableTags addObject:selectedTag];
-        [self.availableTagCollectionView reloadData];
-    }
-    [self.chosenTags removeObject:selectedTag];
-    [self.chosenTagCollectionView deleteItemsAtIndexPaths:@[indexPath]];
-    if ([self.delegate respondsToSelector:@selector(chosenTagsWereUpdatedInTagPicker:)]) {
-        [self.delegate chosenTagsWereUpdatedInTagPicker:self];
-    }
-    if (self.chosenTags.count == 0) {
-        [self addPlaceholderTextToCellTextField];
+    if ([self.chosenTags count] > indexPath.row) {
+        NSString *selectedTag = [self.chosenTags objectAtIndex:indexPath.row];
+        if ([self.allTags containsObject:selectedTag]) {
+            [self.availableTags addObject:selectedTag];
+            [self.availableTagCollectionView reloadData];
+        }
+        [self.chosenTags removeObjectAtIndex:indexPath.row];
+        [self.chosenTagCollectionView deleteItemsAtIndexPaths:@[indexPath]];
+        if ([self.delegate respondsToSelector:@selector(chosenTagsWereUpdatedInTagPicker:)]) {
+            [self.delegate chosenTagsWereUpdatedInTagPicker:self];
+        }
+        if (self.chosenTags.count == 0) {
+            [self addPlaceholderTextToCellTextField];
+        }
     }
 }
 
@@ -252,8 +267,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (collectionView == self.availableTagCollectionView) {
         return self.filteredAvailableTags.count;
-    }
-    if (collectionView == self.chosenTagCollectionView) {
+    } else if (collectionView == self.chosenTagCollectionView) {
         return self.chosenTags.count + 1;
     } else {
         return 0;
@@ -296,6 +310,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
         }
         cell.delegate = self;
         cell.phantomTextField.backspaceDelegate = self;
+        cell.phantomTextField.userInteractionEnabled = self.textfieldEnabled;
         return cell;
     }
 }
@@ -309,9 +324,9 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
             sizingCell = [[PARTagCollectionViewCell alloc] initWithNibNamed:nil];
         }
         NSString *tag;
-        if (collectionView == self.availableTagCollectionView) {
+        if (collectionView == self.availableTagCollectionView && indexPath.row < self.filteredAvailableTags.count) {
             tag = self.filteredAvailableTags[indexPath.row];
-        } else if (collectionView == self.chosenTagCollectionView) {
+        } else if (collectionView == self.chosenTagCollectionView && indexPath.row < self.chosenTags.count) {
             tag = self.chosenTags[indexPath.row];
         }
         sizingCell.tagLabel.text = tag;
@@ -332,7 +347,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
             } else {
                 return YES;
             }
-        } else {
+        } else if (self.shouldAutomaticallyChangeVisibilityState) {
             self.visibilityState = PARTagPickerVisibilityStateTopAndBottom;
         }
     } else if (collectionView == self.availableTagCollectionView){
@@ -353,8 +368,10 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
     if (selectedIndexPath) {
         [self.chosenTagCollectionView deselectItemAtIndexPath:selectedIndexPath animated:YES];
     }
-    [self.cellTextField becomeFirstResponder];
-    self.cellTextField.text = cell.phantomTextField.text;
+    if (self.textfieldEnabled) {
+        [self.cellTextField becomeFirstResponder];
+        self.cellTextField.text = cell.phantomTextField.text;
+    }
 }
 
 #pragma mark - RBTextFieldCollectionViewCellDelegate
@@ -405,12 +422,16 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
 }
 
 - (void)editingInTextFieldCollectionViewCell:(PARTextFieldCollectionViewCell *)cell becameActive:(BOOL)active {
+    if (!self.shouldAutomaticallyChangeVisibilityState) {
+        return;
+    }
+    
     if (!active && [self.chosenTagCollectionView indexPathsForSelectedItems].count > 0) {
         return;
     }
     if (active) {
         [self setVisibilityState:PARTagPickerVisibilityStateTopAndBottom];
-    } else {
+    } else if (self.visibilityState != PARTagPickerVisibilityStateHidden) {
         [self setVisibilityState:PARTagPickerVisibilityStateTopOnly];
     }
 }
@@ -435,7 +456,7 @@ static NSString * const PARTextFieldCollectionViewCellIdentifier = @"PARTextFiel
             if (self.chosenTags.count > 0 && nextRow >= 0 && selectedPath.row != self.chosenTags.count) {
                 NSIndexPath *nextSelection = [NSIndexPath indexPathForItem:nextRow inSection:0];
                 [self.chosenTagCollectionView selectItemAtIndexPath:nextSelection animated:YES scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
-            } else {
+            } else if (self.textfieldEnabled) {
                 [self.cellTextField becomeFirstResponder];
             }
             

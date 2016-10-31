@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '75BEC71A96D5FD55A4FACB8A'
+               BlueprintIdentifier = '1A7CCC5F0FC7EEBBDBEF4AC510C9AA4E'
                BlueprintName = 'PARTagPicker'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PARTagPicker.framework'>
