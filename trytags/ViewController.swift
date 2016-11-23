@@ -19,16 +19,16 @@ class ViewController: UIViewController, PARTagPickerDelegate {
         addPicker()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
     func addPicker() {
         self.addChildViewController(tagPicker)
-        tagPicker.view.frame = CGRect(x: 0, y: 20, width: CGRectGetWidth(view.bounds), height: 80)
+        tagPicker.view.frame = CGRect(x: 0, y: 20, width: view.bounds.width, height: 80)
         self.view.addSubview(tagPicker.view)
-        tagPicker.view.backgroundColor = UIColor.blueColor()
-        tagPicker.view.autoresizingMask = UIViewAutoresizing.FlexibleWidth
+        tagPicker.view.backgroundColor = UIColor.blue
+        tagPicker.view.autoresizingMask = UIViewAutoresizing.flexibleWidth
         tagPicker.delegate = self
         tagPicker.reloadCollectionViews()
         tagPicker.allTags = ["hurfi", "durfi", "murfi", "churfi"]
@@ -36,12 +36,12 @@ class ViewController: UIViewController, PARTagPickerDelegate {
         tagPicker.chosenTags = NSMutableArray()
         tagPicker.tapToEraseTags = true
         tagPicker.allowsNewTags = false
-        tagPicker.visibilityState = .TopAndBottom
+        tagPicker.visibilityState = .topAndBottom
     }
     
-    func tagPicker(tagPicker: PARTagPickerViewController!, visibilityChangedToState state: PARTagPickerVisibilityState) {
+    func tagPicker(_ tagPicker: PARTagPickerViewController!, visibilityChangedTo state: PARTagPickerVisibilityState) {
         // Don't care.
-        tagPicker.view.frame = CGRect(x: 0, y: 20, width: CGRectGetWidth(view.bounds), height: 80)
+        tagPicker.view.frame = CGRect(x: 0, y: 20, width: view.bounds.width, height: 80)
     }
 }
 
